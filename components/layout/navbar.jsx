@@ -19,28 +19,20 @@ function Navbar() {
           {/* app logo */}
           <Link href='/'>
             {/* <img src='/images//svg/logo.svg' alt='logo' /> */}
-            logo
+            BOOKING HOTEL
           </Link>
 
           {/* navbar toggle button */}
-          <button
-            className='nav-btn'
-            onClick={() => setIsOpen(!isOpen)}
-            type='button'
-          >
+          <button className='nav-btn' onClick={() => setIsOpen(!isOpen)} type='button' aria-label='Toggle navigation'>
             <FaAlignRight className='nav-icon' />
           </button>
-
         </div>
 
         {/* navbar login button */}
-        {user?.id && token ? (<UserPopover />) : (
-          <Button
-            style={{ position: 'absolute', right: '100px', top: '20px' }}
-            onClick={() => router.push('/auth/login')}
-            type='primary'
-            size='large'
-          >
+        {user?.id && token ? (
+          <UserPopover />
+        ) : (
+          <Button style={{ position: 'absolute', right: '100px', top: '20px' }} onClick={() => router.push('/auth/login')} type='primary' size='large'>
             Log In
           </Button>
         )}

@@ -78,7 +78,7 @@ export async function getServerSideProps() {
     return {
       props: {
         rooms: null,
-        error: err?.data
+        error: err?.data || null
       }
     };
   }

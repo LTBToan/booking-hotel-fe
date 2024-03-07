@@ -123,7 +123,7 @@ export async function getServerSideProps(ctx) {
     return {
       props: {
         room: null,
-        error: err?.data
+        error: err?.data || null
       }
     };
   }

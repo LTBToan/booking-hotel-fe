@@ -1,5 +1,3 @@
-
-
 import { ExclamationCircleFilled, SortAscendingOutlined, SortDescendingOutlined } from '@ant-design/icons';
 import {
   Button, Modal, Rate, Result, Space, Table, Tag, Tooltip

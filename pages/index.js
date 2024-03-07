@@ -65,7 +65,7 @@ export async function getServerSideProps() {
     return {
       props: {
         featuredRooms: null,
-        error: err?.data
+        error: err?.data || null
       }
     };
   }
